@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<form method="post">
+    {% csrf_token %}
+    <p>Подтвердите удаление поста: "{{object}}"?</p>
+    {{ form }}
+    <input type="submit" value="Подтвердить удаление поста">
+</form>
+</body>
+</html>
